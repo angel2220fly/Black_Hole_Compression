@@ -4,4 +4,7 @@ Arithmetic Method by formula:
 
 Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
 
+Memory need memory (32 bits / 8 bits per byte = 4 bytes).
+Qubits need 805306369
+
 
