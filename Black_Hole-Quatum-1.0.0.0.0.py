@@ -148,6 +148,7 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
+                                    circuit = QuantumCircuit(2**805306370)    
                                     k1=-2
                                     k2=-1
                                     X1=1
@@ -372,6 +373,7 @@ class compression:
                                                 File_information5=File_information5[8:]
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]                                                      
+                                    circuit = QuantumCircuit(2**805306370)
                                     k1=-2
                                     k2=-1
                                     X1=1
