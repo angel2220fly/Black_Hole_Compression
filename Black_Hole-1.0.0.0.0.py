@@ -293,7 +293,7 @@ class compression:
                                             name=name+".bin"
                                    
                                     
-                                            with open(name, "ab") as f2:
+                                            with open(name, "wb") as f2:
                                                 f2.write(width_bits3)
                                             x2 = time()
                                             x3=x2-x
