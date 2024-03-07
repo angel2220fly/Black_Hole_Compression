@@ -80,17 +80,7 @@ class compression:
                     Translate_info_Decimal=""
                     D=0
                     long_name=len(name)
-                    if i==2:
-                        userInput = 0
-                        while True:
-                          try:
-                             userInput = int(name)   
-                          except ValueError:
-                             print("Not an integer!")
-                             raise SystemExit
-                          else:
-                             print("Yes an integer!")
-                             break
+           
                     with open(name, "rb") as binary_file:
                         data = binary_file.read()
                         s=str(data)
@@ -300,23 +290,10 @@ class compression:
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
                                             File_information5_2=Clear
-                                            f1=Number_of_the_file
-                                            f2=Square_of_ROOT
-                                            f3=Add_Numbers//3
-                                            f4=Multiply
-                                            f5=Divide
-                                            f6=f1+f2+f3+f4+f5
-                                            name=name+"/"
-                                            name_2=str(f6)
-                                            ML=len(name_2)
-                                            if ML<10:
-                                                M=str(name_2[:ML])
-                                            else:
-                                                M=name_2[:10]
-                                            print(M)
-                                            with open("1", "w") as f6:
-                                                f6.write(name)
-                                            with open("1", "ab") as f2:
+                                            name=name+".bin"
+                                   
+                                    
+                                            with open(name, "ab") as f2:
                                                 f2.write(width_bits3)
                                             x2 = time()
                                             x3=x2-x
@@ -330,16 +307,7 @@ class compression:
                                             File_information5=INFO
                                         if   File_information6_Times2==0:
                                                 long_16=len(File_information5)
-                                                ascii_string = ""
-                                                while File_information5[:8]!="00101111":
-                                                    a_binary_string=File_information5[:8]
-                                                    binary_values = a_binary_string. split()
-                                                    for binary_value in binary_values:
-                                                        an_integer = int(binary_value, 2)
-                                                    ascii_character = str(chr(an_integer))
-                                                    ascii_string += ascii_character
-                                                    File_information5=File_information5[8:]
-                                                File_information5=File_information5[8:]
+
                                                 if File_information5[:1]=="0":
                                                     while File_information5[:1]!="1":
                                                         if File_information5[:1]=="0":
@@ -489,26 +457,10 @@ class compression:
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
                                             File_information5_2=Clear
-                                            f1=Number_of_the_file
-                                            f2=Square_of_ROOT
-                                            f3=Add_Numbers//3
-                                            f4=Multiply
-                                            f5=Divide
-                                            f6=f1+f2+f3+f4+f5
-                                            name_3=str(f6)
-                                            ML=len(name_3)
-                                            if ML<10:
-                                                M1=str(name_3[:ML])
-                                            else:
-                                                M1=name_3[:10]
-                                            if M1!=str(name):
-                                                print("file_decrypted")
-                                            else:
-                                                print("file_decrypted")
-                                          
-                                                
-
-                                            with open(ascii_string, "wb") as f2:
+           
+                                            long_extract=len(name)
+                                            name=name[:long_extract-4]
+                                            with open(name, "wb") as f2:
                                                 f2.write(width_bits3)
                                             x2 = time()
                                             x3=x2-x
