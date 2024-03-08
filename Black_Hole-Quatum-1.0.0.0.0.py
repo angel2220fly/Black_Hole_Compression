@@ -144,7 +144,7 @@ class compression:
                                 
                                     k1=-1
                                     k2=0
-                                    X1=1
+                                    X1=0
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -156,6 +156,7 @@ class compression:
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
+                                            X1+=1
                                             if k1==805306368:
                                                         k1=-1
                                                         k2+=1
@@ -163,7 +164,7 @@ class compression:
                                                         k1=-1
                                                         k2=0
                                             circuit.cp(University, k1, k2)
-                                            University=int(k2)
+                                            University=int(X1)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -172,7 +173,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>44739242:
+                                            if X1>805306368:
                                                 University=0
                                                 X1=1
                                                 X2=1
@@ -349,7 +350,7 @@ class compression:
                                 
                                     k1=-1
                                     k2=0
-                                    X1=1
+                                    X1=0
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -361,6 +362,7 @@ class compression:
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
+                                            X1+=1
                                             if k1==805306368:
                                                         k1=-1
                                                         k2+=1
@@ -368,7 +370,7 @@ class compression:
                                                         k1=-1
                                                         k2=0
                                             circuit.cp(University, k1, k2)
-                                            University=int(k2)
+                                            University=int(X1)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -377,7 +379,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>44739242:
+                                            if X1>805306368:
                                                 University=0
                                                 X1=1
                                                 X2=1
