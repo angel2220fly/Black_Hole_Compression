@@ -140,7 +140,7 @@ class compression:
                                 if i==1:
                                                     
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(2**805306370)
+                                    circuit = QuantumCircuit(805306370)
                                 
                                     k1=-2
                                     k2=-1
@@ -156,8 +156,10 @@ class compression:
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
-                                            k2+=1
-                                            if k1==2**805306369:
+                                            if k1==805306368:
+                                                        k1=-1
+                                                        k2+=1
+                                            if k2==805306368:
                                                         k1=-1
                                                         k2=0
                                             circuit.cp(University, k1, k2)
@@ -343,7 +345,7 @@ class compression:
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]                                                      
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(2**805306370)
+                                    circuit = QuantumCircuit(805306370)
                                 
                                     k1=-2
                                     k2=-1
@@ -359,8 +361,10 @@ class compression:
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
-                                            k2+=1
-                                            if k1==2**805306369:
+                                            if k1==805306368:
+                                                        k1=-1
+                                                        k2+=1
+                                            if k2==805306368:
                                                         k1=-1
                                                         k2=0
                                             circuit.cp(University, k1, k2)
