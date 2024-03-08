@@ -138,11 +138,13 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
-                                   
+                                                    
+                                    from qiskit.circuit import QuantumCircuit
+                                    circuit = QuantumCircuit(2**805306370)
                                 
-                                    k1=-1
-                                    k2=0
-                                    X1=0
+                                    k1=-2
+                                    k2=-1
+                                    X1=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -154,16 +156,12 @@ class compression:
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
-                                            X1+=1
-                                            if k1==805306368:
-                                                        k1=-1
-                                                        k2+=1
-                                            if k2==805306368:
+                                            k2+=1
+                                            if k1==2**805306369:
                                                         k1=-1
                                                         k2=0
-
-                                            University=int(2**X1)
-                                            print(University)
+                                            circuit.cp(University, k1, k2)
+                                            University=int(k2)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -172,7 +170,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306368:
+                                            if X1>44739242:
                                                 University=0
                                                 X1=1
                                                 X2=1
@@ -345,11 +343,11 @@ class compression:
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]                                                      
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(805306370)
+                                    circuit = QuantumCircuit(2**805306370)
                                 
-                                    k1=-1
-                                    k2=0
-                                    X1=0
+                                    k1=-2
+                                    k2=-1
+                                    X1=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -361,11 +359,8 @@ class compression:
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
-                                            X1+=1
-                                            if k1==805306368:
-                                                        k1=-1
-                                                        k2+=1
-                                            if k2==805306368:
+                                            k2+=1
+                                            if k1==2**805306369:
                                                         k1=-1
                                                         k2=0
                                             circuit.cp(University, k1, k2)
@@ -378,7 +373,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306368:
+                                            if X1>44739242:
                                                 University=0
                                                 X1=1
                                                 X2=1
