@@ -142,8 +142,8 @@ class compression:
                                     from qiskit.circuit import QuantumCircuit
                                     circuit = QuantumCircuit(805306370)
                                 
-                                    k1=-2
-                                    k2=-1
+                                    k1=-1
+                                    k2=0
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -347,8 +347,8 @@ class compression:
                                     from qiskit.circuit import QuantumCircuit
                                     circuit = QuantumCircuit(805306370)
                                 
-                                    k1=-2
-                                    k2=-1
+                                    k1=-1
+                                    k2=0
                                     X1=1
                                     Extract1=0
                                     Multiply=1
