@@ -139,14 +139,13 @@ class compression:
                                         raise SystemExit
                                 if i==1:
                                                     
-                                    from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(805306370)
+
                                 
                                     k1=-2
                                     k2=-1
                                     X1=1
-                                    k3=-1
-                                    k4=0
+                                    k3=0
+                                    k4=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -162,13 +161,14 @@ class compression:
                                             k3+=1
                                          
                                             if k3==805306368:
-                                                        k3=-1
+                                                        k3=0
                                                         k4+=1
                                             if k4==805306368:
-                                                        k3=-1
-                                                        k4=0
-                                            circuit.cp(University, k3, k4)
+                                                        k3=0
+                                                        k4=1
+
                                             University=int(k2)
+                                            print(k3)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -355,8 +355,8 @@ class compression:
                                     k1=-2
                                     k2=-1
                                     X1=1
-                                    k3=-1
-                                    k4=0
+                                    k3=0
+                                    k4=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -372,11 +372,11 @@ class compression:
                                             k3+=1
                                             
                                             if k3==805306368:
-                                                        k3=-1
+                                                        k3=0
                                                         k4+=1
                                             if k4==805306368:
-                                                        k3=-1
-                                                        k4=0
+                                                        k3=0
+                                                        k4=1
                                             circuit.cp(University, k3, k4)
                                             University=int(k2)
                                             X2=X1
