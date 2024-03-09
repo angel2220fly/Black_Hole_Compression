@@ -183,7 +183,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>44739242:
+                                            if X1>805306368:
                                                 University=0
                                                 X1=1
                                                 X2=1
@@ -392,7 +392,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306370:
+                                            if X1>805306368:
                                                 University=0
                                                 X1=1
                                                 X2=1
