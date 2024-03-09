@@ -173,8 +173,9 @@ class compression:
                                             if k3==k4:
                                                 k4-=1                                              
                                            
-                                            QuantumCircuit(University)
+                                            
                                             University=int(k2)
+                                            QuantumCircuit(University) 
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
