@@ -167,7 +167,7 @@ class compression:
                                             if k4==805306368:
                                                         k3=-1
                                                         k4=0
-                                            circuit.cp(University, k,3, k4)
+                                            circuit.cp(University, k3, k4)
                                             University=int(k2)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
