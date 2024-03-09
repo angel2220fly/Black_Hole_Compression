@@ -138,38 +138,40 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
-                                                    
-                                    from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(805306370
+
+                                    from qiskit import QuantumCircuit
+                                            
+                                    circuit = QuantumCircuit(805306370)                                
                                 
                                     k1=-2
                                     k2=-1
+                                    k3=0
+                                    k4=1
                                     X1=1
                                     k3=0
                                     k4=1
                                     Extract1=0
                                     Multiply=1
+                                    counts=-1
                                     Add_Numbers=-1
                                     Times_12=1
                                     University=-1
                                     Divide=1  
-                                    counts=-1
-                                    SQUEAR_OF_ROOT=-1
+                                    SQUEARE_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
                                             k3+=1
-                                         
+                                                 
                                             if k3==805306368:
-                                                        k3=0
-                                                        k4+=1
+                                                 k3=0
+                                                 k4+=1
                                             if k4==805306368:
-                                                        k3=0
-                                                        k4=1
-
+                                                 k3=0
+                                                 k4=1
+                                            circuit.cp(University, k3, k4)
                                             University=int(k2)
-                                            print(k3)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -187,7 +189,7 @@ class compression:
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
+                                            SQUEARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             counts+=1
 
@@ -349,15 +351,17 @@ class compression:
                                                 Random_C=int(File_information5[0:8],2)
                                                 File_information5=File_information5[8:]
                                                 long=int(File_information5[:Random_C],2)
-                                                File_information5=File_information5[Random_C:]                                                      
-                                    from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(805306370)
-                                
+                                                File_information5=File_information5[Random_C:]
+                                                
+                                    from qiskit import QuantumCircuit
+                                            
+                                    circuit = QuantumCircuit(805306370)                                                                                                               
+                                                                                                                                                                                                                  
                                     k1=-2
                                     k2=-1
-                                    X1=1
                                     k3=0
                                     k4=1
+                                    X1=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -365,21 +369,21 @@ class compression:
                                     University=-1
                                     Divide=1  
                                     counts=-1
-                                    SQUEAR_OF_ROOT=-1
+                                    SQUEARE_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
                                             k3+=1
-                                            
+                                                 
                                             if k3==805306368:
-                                                        k3=0
-                                                        k4+=1
+                                                                k3=0
+                                                                k4+=1
                                             if k4==805306368:
-                                                        k3=0
-                                                        k4=1
-                                            circuit.cp(University, k3, k4)
+                                                                k3=0
+                                                                k4=1
                                             University=int(k2)
+                                            circuit.cp(University, k3, k4)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -397,7 +401,7 @@ class compression:
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
+                                            SQUEARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             counts+=1
 
