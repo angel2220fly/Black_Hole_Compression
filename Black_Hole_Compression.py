@@ -171,7 +171,7 @@ class compression:
                                                  k3=0
                                                  k4=1
                                             if k3==k4:
-                                                k4-=4                                                 
+                                                k4-=1                                              
                                                  
                                             circuit.cp(University, k3, k4)
                                             University=int(k2)
@@ -386,7 +386,7 @@ class compression:
                                                                 k3=0
                                                                 k4=1
                                             if k3==k4:
-                                                k4-=4
+                                                k4-=1
                                                 
                                             University=int(k2)
                                             circuit.cp(University, k3, k4)
