@@ -138,18 +138,9 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
-
-                                    from qiskit import QuantumCircuit
-                                            
-                                    circuit = QuantumCircuit(805306370)                                
-                                
                                     k1=-2
                                     k2=-1
-                                    k3=0
-                                    k4=1
                                     X1=1
-                                    k3=0
-                                    k4=1
                                     Extract1=0
                                     Multiply=1
                                     counts=-1
@@ -157,34 +148,22 @@ class compression:
                                     Times_12=1
                                     University=-1
                                     Divide=1  
-                                    SQUARE_OF_ROOT=-1
+                                    SQUEAR_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            k3+=1
-                                                 
-                                            if k3==805306368:
-                                                 k3=0
-                                                 k4+=1
-                                            if k4==805306368:
-                                                 k3=0
-                                                 k4=1
-                                            if k3==k4:
-                                                k4-=1                                              
-                                           
-                                            
                                             University=int(k2)
-                                            QuantumCircuit(University) 
                                             X2=X1
-                                            C11="0"+str(((8*X2)+40))+"b"
+                                        
+                                            C11="0"+str(2**255)+"b"
                                             if University>(2**((8*X1)+40)-1):
                                                     University=0
                                                     k1=-1
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306368:
+                                            if X1>2**255:
                                                 University=0
                                                 X1=1
                                                 X2=1
@@ -193,7 +172,7 @@ class compression:
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            SQUARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
+                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             counts+=1
 
@@ -207,7 +186,7 @@ class compression:
                                             File_information53=""
                                             File_information54=""
                                             Add_N=""
-                                            File_information52=format(SQUARE_OF_ROOT,'024b')
+                                            File_information52=format(SQUEAR_OF_ROOT,'024b')
                                             File_information53=format(Multiply,'024b')
                                             Add_N=format(Add_Numbers,'024b')
                                             if   File_information6_Times2==0:
@@ -355,16 +334,9 @@ class compression:
                                                 Random_C=int(File_information5[0:8],2)
                                                 File_information5=File_information5[8:]
                                                 long=int(File_information5[:Random_C],2)
-                                                File_information5=File_information5[Random_C:]
-                                                
-                                    from qiskit import QuantumCircuit
-                                            
-                                    circuit = QuantumCircuit(805306370)                                                                                                               
-                                                                                                                                                                                                                  
+                                                File_information5=File_information5[Random_C:]                                                      
                                     k1=-2
                                     k2=-1
-                                    k3=0
-                                    k4=1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -373,27 +345,21 @@ class compression:
                                     University=-1
                                     Divide=1  
                                     counts=-1
-                                    SQUARE_OF_ROOT=-1
+                                    SQUEAR_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            k3+=1
-                                                 
-                                            
-                                                
                                             University=int(k2)
-                                            QuantumCircuit(University)
-                                            
                                             X2=X1
-                                            C11="0"+str(((8*X2)+40))+"b"
+                                            C11="0"+str(2**255)+"b"
                                             if University>(2**((8*X1)+40)-1):
                                                     University=0
                                                     k1=-1
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306368:
+                                            if X1>2**255:
                                                 University=0
                                                 X1=1
                                                 X2=1
@@ -402,10 +368,8 @@ class compression:
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            SQUARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
+                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
-                                            
-                                          
                                             counts+=1
 
                                             if Divide==0:
@@ -418,7 +382,7 @@ class compression:
                                             File_information53=""
                                             File_information54=""
                                             Add_N=""
-                                            File_information52=format(SQUARE_OF_ROOT,'024b')
+                                            File_information52=format(SQUEAR_OF_ROOT,'024b')
                                             File_information53=format(Multiply,'024b')
                                             Add_N=format(Add_Numbers,'024b')
                                             if   File_information6_Times2==0:
