@@ -1,4 +1,4 @@
-   import os  
+import os  
 from time import time
 import binascii
 import math
@@ -505,4 +505,4 @@ class compression:
                                             return xs;
 d=compression()
 xw1=d.cryptograpy_compression4()
-print(xw1)                                         University=int(k2)
+print(xw1)
