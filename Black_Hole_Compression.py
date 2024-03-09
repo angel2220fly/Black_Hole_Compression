@@ -141,41 +141,32 @@ class compression:
 
                                     from qiskit import QuantumCircuit
                                             
-                                    circuit = QuantumCircuit(805306370)                                
-                                
+                                    circuit = QuantumCircuit(805306370)                                                                                                               
+                                                                                                                                                                                                                  
                                     k1=-2
                                     k2=-1
                                     
-                                    
+                                   
                                     X1=1
-                                    k3=0
-                                    k4=1
                                     Extract1=0
                                     Multiply=1
-                                    counts=-1
                                     Add_Numbers=-1
                                     Times_12=1
                                     University=-1
                                     Divide=1  
+                                    counts=-1
                                     SQUARE_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            k3+=1
-                                                 
-                                            if k3==805306368:
-                                                 k3=0
-                                                 k4+=1
-                                            if k4==805306368:
-                                                 k3=0
-                                                 k4=1
-                                            if k3==k4:
-                                                k4-=1                                              
-                                           
                                             
+                                                 
+                                            
+                                                
                                             University=int(k2)
-                                            QuantumCircuit(University) 
+                                            QuantumCircuit(University)
+                                            
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             if University>(2**((8*X1)+40)-1):
@@ -378,7 +369,7 @@ class compression:
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            k3+=1
+                                            
                                                  
                                             
                                                 
