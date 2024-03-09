@@ -139,7 +139,8 @@ class compression:
                                         raise SystemExit
                                 if i==1:
                                                     
-
+                                    from qiskit.circuit import QuantumCircuit
+                                    circuit = QuantumCircuit(805306370
                                 
                                     k1=-2
                                     k2=-1
