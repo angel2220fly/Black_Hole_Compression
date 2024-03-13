@@ -44,7 +44,7 @@ class compression:
                     if name_input=="e":
                         i=2
                     Clear=""
-                    name = input("What is name of file?")
+                    name = input("What is name of file? ")
                     
                     if os.path.exists(name):
                             print('Path is exists!')
