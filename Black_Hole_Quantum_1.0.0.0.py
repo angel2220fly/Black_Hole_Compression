@@ -23,7 +23,7 @@ class compression:
                                    Multiply=2**26*1024*1024
                                   
                         if Square_of_ROOT<=(26*1024*1024):
-                                   Multiply=(26*1024*1024)
+                                   F=1
                                                                       
                                    
                         
