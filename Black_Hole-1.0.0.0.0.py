@@ -16,10 +16,10 @@ class compression:
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
                         
-                        if  Square_of_ROOT<=26*1024*1024
+                        if  Square_of_ROOT>=26*1024*1024
                                    Square_of_ROOT=26*1024*1024
                             
-                        if Multiply>26*1024*1024:
+                        if Multiply>=26*1024*1024:
                                    Multiply=26*1024*1024
                                   
                         
