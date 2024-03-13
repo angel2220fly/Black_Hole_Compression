@@ -16,12 +16,14 @@ class compression:
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
                         
-                        if  Square_of_ROOT>=2**(26*(1024*1024)):
-                                   Square_of_ROOT=2**(26*(1024*1024))
+                        if  Square_of_ROOT<=(26*1024*1024) and Multiply<=2**26*1024*1024:
+                                F=1
                             
-                        if Multiply>=2**(26*(1024*1024)):
-                                   Multiply=2**(26*(1024*1024))
+                        if Multiply>2**26*1024*1024:
+                                   Multiply=2**26*1024*1024
                                   
+                        if Square_of_ROOT<=(26*1024*1024):
+                                   Multiply=(26*1024*1024)
                                                                       
                                    
                         
@@ -43,7 +45,7 @@ class compression:
                     if name_input=="e":
                         i=2
                     Clear=""
-                    name = input("What is name of file? ")
+                    name = input("What is name of file?")
                     
                     if os.path.exists(name):
                             print('Path is exists!')
@@ -236,10 +238,10 @@ class compression:
                                                             Number_of_the_file=int(File_information54, 2)
                                                         else:
                                                             Number_of_the_file=0
-                                                        if Deep5<=11*1024*1024:
+                                                        if Deep5<=26*1024*1024:
                                                                 Hole_Number_information=(2**Deep5)-1
                                                         else:
-                                                                Deep5=11*1024*1024
+                                                                Deep5=26*1024*1024
                                                                 Hole_Number_information=(2**Deep5)-1
                                                                 
                                                         Square_of_ROOT=Hole_Number_information
@@ -449,10 +451,10 @@ class compression:
                                                             Number_of_the_file=0
                                                         Hole_Number_information=(2**Deep5)-1
                                                         Square_of_ROOT=Hole_Number_information
-                                                        if Deep5<=11*1024*1024:
+                                                        if Deep5<=26*1024*1024:
                                                                 Hole_Number_information=(2**Deep5)-1
                                                         else:
-                                                                Deep5=11*1024*1024
+                                                                Deep5=26*1024*1024
                                                                 Hole_Number_information=(2**Deep5)-1
                                                         Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts = process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts)
 
