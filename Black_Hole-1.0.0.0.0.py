@@ -20,10 +20,10 @@ class compression:
                                 F=1
                             
                         if Multiply>2**26*1024*1024:
-                                   Multiply=2**26*1024*1024
+                                   F=1
                                   
                         if Square_of_ROOT<=(26*1024*1024):
-                                   F=1
+                                   Square_of_ROOT=(26*1024*1024)
                                                                       
                                    
                         
