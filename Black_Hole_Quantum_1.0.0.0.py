@@ -16,11 +16,11 @@ class compression:
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
                         
-                        if  Square_of_ROOT>=2**13*1024*1024:
-                                   Square_of_ROOT=2**13*1024*1024
+                        if  Square_of_ROOT>=2**(26*(1024*1024)):
+                                   Square_of_ROOT=2**(26*(1024*1024))
                             
-                        if Multiply>=2**13*1024*1024:
-                                   Multiply=2**13*1024*1024
+                        if Multiply>=2**(26*(1024*1024)):
+                                   Multiply=2**(26*(1024*1024))
                                   
                                                                       
                                    
@@ -236,10 +236,10 @@ class compression:
                                                             Number_of_the_file=int(File_information54, 2)
                                                         else:
                                                             Number_of_the_file=0
-                                                        if Deep5<=13*1024*1024:
+                                                        if Deep5<=11*1024*1024:
                                                                 Hole_Number_information=(2**Deep5)-1
                                                         else:
-                                                                Deep5=13*1024*1024
+                                                                Deep5=11*1024*1024
                                                                 Hole_Number_information=(2**Deep5)-1
                                                                 
                                                         Square_of_ROOT=Hole_Number_information
@@ -449,10 +449,10 @@ class compression:
                                                             Number_of_the_file=0
                                                         Hole_Number_information=(2**Deep5)-1
                                                         Square_of_ROOT=Hole_Number_information
-                                                        if Deep5<=13*1024*1024:
+                                                        if Deep5<=11*1024*1024:
                                                                 Hole_Number_information=(2**Deep5)-1
                                                         else:
-                                                                Deep5=13*1024*1024
+                                                                Deep5=11*1024*1024
                                                                 Hole_Number_information=(2**Deep5)-1
                                                         Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts = process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts)
 
