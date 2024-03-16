@@ -162,6 +162,11 @@ class compression:
                                             QuantumCircuit(University)                                            
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
+                                            c7=((8*X2)+40)
+                                            if ((2**c7)-1)==k2:
+                                                k2=0
+                                                X1+=1
+ 
                                             
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
@@ -352,6 +357,10 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            c7=((8*X2)+40)
+                                            if ((2**c7)-1)==k2:
+                                                k2=0
+                                                X1+=1
                                          
 
                                             if Divide==0:
