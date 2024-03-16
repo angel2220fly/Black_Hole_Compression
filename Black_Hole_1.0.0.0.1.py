@@ -65,6 +65,8 @@ class compression:
                     C3=0
                     C4=0
                     C5=0
+                   
+                   
                     n=0
                     x = time()
                     File_information6_Times2_1=0
@@ -158,6 +160,12 @@ class compression:
                                             University=int(k2)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
+                                            
+                                            c7=len((8*X2)+40)
+                                            if ((2**c7)-1)==k2:
+                                                k2=0
+                                                X1+=1
+                                            
                                             
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
@@ -337,6 +345,10 @@ class compression:
                                             University=int(k2)
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
+                                            c7=len((8*X2)+40)
+                                            if ((2**c7)-1)==k2:
+                                                k2=0
+                                                X1+=1
                                             
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
@@ -345,6 +357,7 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                                                                        
                                          
 
                                             if Divide==0:
