@@ -169,7 +169,7 @@ class compression:
                                             
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
-                                            if University>(2**((8*X1)+40)-1):
+                                            if k2>(2**((8*X1)+40)-1):
                                                     University=0
                                                     k1=-1
                                                     k2=0
@@ -378,7 +378,7 @@ class compression:
                                             
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
-                                            if University>(2**((8*X1)+40)-1):
+                                            if k2>(2**((8*X1)+40)-1):
                                                     University=0
                                                     k1=-1
                                                     k2=0
