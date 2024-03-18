@@ -31,6 +31,8 @@ class compression:
                         
                         if Number_of_the_file == Before_X or counts==-1:
                             counts=counts
+                        elif counts==-1:
+                                counts+=1
                         else:
                             counts+=1
                 
