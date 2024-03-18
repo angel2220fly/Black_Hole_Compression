@@ -29,7 +29,7 @@ class compression:
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
                         
-                        if Number_of_the_file == Before_X or counts==-1:
+                        if Number_of_the_file == Before_X:
                             counts=counts
                         elif counts==-1:
                                 counts+=1
