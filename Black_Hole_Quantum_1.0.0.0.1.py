@@ -16,11 +16,7 @@ class compression:
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
                         
-                        if  Square_of_ROOT<=(26*1024*1024) and Multiply<=2**26*1024*1024:
-                                F=1
-                            
-                        if Multiply>2**26*1024*1024:
-                                   F=1
+                        
                                   
                         if Square_of_ROOT<=(26*1024*1024):
                                    Square_of_ROOT=(26*1024*1024)
@@ -28,12 +24,15 @@ class compression:
                                    
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
+                        F=0
                         if counts==-1:
                                 counts+=1
+                                F=1
                         if Number_of_the_file == Before_X:
                             counts=counts
                         else:
-                            counts+=1
+                            if F==0:
+                                    counts+=1
                 
                         return Number_of_the_file, Square_of_ROOT, Add_Numbers, Multiply, counts
                 self.name = "Written: Jurijus pacalovas"
