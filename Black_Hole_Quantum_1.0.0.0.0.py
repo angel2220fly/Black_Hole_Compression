@@ -186,6 +186,8 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            if Times_12>2**20:
+                                                Times_12=0
         
 
                                             if Divide==0:
@@ -395,6 +397,8 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            if Times_12>2**20:
+                                                Times_12=0
                                             
                                           
                                             
