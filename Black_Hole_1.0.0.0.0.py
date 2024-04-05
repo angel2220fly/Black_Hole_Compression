@@ -164,10 +164,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306368:
-                                                University=0
-                                                X1=1
-                                                X2=1
+                                         
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
@@ -177,6 +174,13 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             if Times_12>2**21:
                                                 Times_12=0
+                                                University=0
+                                                k1=-1
+                                                k2=0
+                                                counts=0
+                                                X1+=1       
+                                         
+
                                            
 
                                             if Divide==0:
@@ -362,10 +366,7 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                            if X1>805306368:
-                                                University=0
-                                                X1=1
-                                                X2=1
+                                           
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
@@ -375,6 +376,11 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             if Times_12>2**21:
                                                 Times_12=0
+                                                University=0
+                                                k1=0
+                                                k2=1
+                                                counts=0
+                                                X1+=1       
                                          
 
                                             if Divide==0:
