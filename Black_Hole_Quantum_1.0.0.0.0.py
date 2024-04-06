@@ -185,7 +185,7 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             if Times_12>2**21:
                                                 Times_12=0
-                                                University=0
+                                        
                                              
                                               
                                                 counts=0
@@ -398,7 +398,7 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             if Times_12>2**21:
                                                 Times_12=0
-                                                University=0
+                                                
                                              
                                                 
                                                 counts=0
