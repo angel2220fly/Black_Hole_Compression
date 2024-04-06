@@ -186,8 +186,8 @@ class compression:
                                             if Times_12>2**21:
                                                 Times_12=0
                                                 University=0
-                                                k1=0
-                                                k2=1
+                                             
+                                              
                                                 counts=0
                                                 X1+=1  
         
@@ -399,8 +399,8 @@ class compression:
                                             if Times_12>2**21:
                                                 Times_12=0
                                                 University=0
-                                                k1=0
-                                                k2=1
+                                             
+                                                
                                                 counts=0
                                                 X1+=1  
                                             
