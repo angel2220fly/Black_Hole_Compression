@@ -171,12 +171,16 @@ class compression:
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)                                            # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
+                                            
+                                            if Times_12 > 2**i:
+                                                    X1 += i
+                                                    counts = 0 # Reset counts to 0
+                                            
+                                            
                                             if Times_12>2**21:
                                                 Times_12=0
-                                        
-                                                
-                                            
+
                                                 counts=0
                                                 X1+=1       
                                          
@@ -374,14 +378,23 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
+                                            
+                                            if Times_12 > 2**i:
+                                                    X1 += i
+                                                    counts = 0 # Reset counts to 0
+                                            
+                                            
                                             if Times_12>2**21:
                                                 Times_12=0
-                                                
-                                              
-                                             
+
                                                 counts=0
-                                                X1+=1       
-                                         
+                                                X1+=1         
+
+
+
+
+                                                                                    
 
                                             if Divide==0:
                                             	Divide=1
