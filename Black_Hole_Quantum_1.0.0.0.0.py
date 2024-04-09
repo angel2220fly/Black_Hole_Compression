@@ -141,8 +141,13 @@ class compression:
 
                                     from qiskit import QuantumCircuit
                                             
-                                    circuit = QuantumCircuit(805306370)                                                                                                               
+                                    circuit = QuantumCircuit(805306370)
+                                    y=0
+                                    
+                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                   
+    
                                     k1=-2
                                     k2=-1
                                     
@@ -185,8 +190,8 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
-                                            if Times_12 > 2**i:
-                                                    X1 += i
+                                            if Times_12 > 2**y:
+                                                    X1 += y
                                                     counts = 0 # Reset counts to 0
                                             
                                             
@@ -359,8 +364,12 @@ class compression:
                                                 
                                     from qiskit import QuantumCircuit
                                             
-                                    circuit = QuantumCircuit(805306370)                                                                                                               
+                                    circuit = QuantumCircuit(805306370)
+                                    y=0
+                                    
+                                                                                                                                                                                                                                                              
                                                                                                                                                                                                                   
+          
                                     k1=-2
                                     k2=-1
                                     
@@ -403,8 +412,8 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
-                                            if Times_12 > 2**i:
-                                                    X1 += i
+                                            if Times_12 > 2**y:
+                                                    X1 += y
                                                     counts = 0 # Reset counts to 0
                                             
                                             
