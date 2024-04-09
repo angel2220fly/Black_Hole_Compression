@@ -140,16 +140,17 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
+                                    y=0            
                                     k1=-2
                                     k2=-1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
-                                    counts=-1
                                     Add_Numbers=-1
                                     Times_12=1
                                     University=-1
                                     Divide=1  
+                                    counts=-1
                                     SQUEAR_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
@@ -164,17 +165,18 @@ class compression:
                                                     k2=0
                                                     counts=-1
                                                     X1+=1                                          
-                                         
+                                           
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)                                            # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
+                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
-                                            if Times_12 > 2**i:
-                                                    X1 += i
+                                            if Times_12 > 2**y:
+                                                    X1 += y
                                                     counts = 0 # Reset counts to 0
                                             
                                             
@@ -182,10 +184,13 @@ class compression:
                                                 Times_12=0
 
                                                 counts=0
-                                                X1+=1       
-                                         
+                                                X1+=1
+                                                y=0        
 
-                                           
+
+
+
+                                                                                    
 
                                             if Divide==0:
                                             	Divide=1
@@ -345,7 +350,9 @@ class compression:
                                                 Random_C=int(File_information5[0:8],2)
                                                 File_information5=File_information5[8:]
                                                 long=int(File_information5[:Random_C],2)
-                                                File_information5=File_information5[Random_C:]                                                      
+                                                File_information5=File_information5[Random_C:]
+                                    
+                                    y=0            
                                     k1=-2
                                     k2=-1
                                     X1=1
@@ -380,8 +387,8 @@ class compression:
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
-                                            if Times_12 > 2**i:
-                                                    X1 += i
+                                            if Times_12 > 2**y:
+                                                    X1 += y
                                                     counts = 0 # Reset counts to 0
                                             
                                             
@@ -389,7 +396,8 @@ class compression:
                                                 Times_12=0
 
                                                 counts=0
-                                                X1+=1         
+                                                X1+=1
+                                                y=0        
 
 
 
