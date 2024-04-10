@@ -199,7 +199,8 @@ class compression:
                                                 Times_12=0
 
                                                 counts=0
-                                                X1+=1     
+                                                X1+=1
+                                                y=0
         
 
                                             if Divide==0:
@@ -421,7 +422,8 @@ class compression:
                                                 Times_12=0
 
                                                 counts=0
-                                                X1+=1     
+                                                X1+=1
+                                                y=0
                                             
                                           
                                             
