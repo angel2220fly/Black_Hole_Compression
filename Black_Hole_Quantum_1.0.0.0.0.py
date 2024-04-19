@@ -9,6 +9,8 @@ add_bits=""
 Make_togher=""
 level_c = input("level compress 1 or  2? ")
 if level_c=="1":
+    llevel_c = input("level compress 1 or  2? ")
+if level_c=="1":
     level_c1=1
 else:
     level_c1=2
@@ -27,11 +29,10 @@ class compression:
                             if Square_of_ROOT>=(26*1024*1024):
                                        Square_of_ROOT=(26*1024*1024)
                                                                           
-                         if level_c1==1:   
+                        elif level_c1==1:   
                             if Square_of_ROOT<=(26*1024*1024):
                                        Square_of_ROOT=(26*1024*1024)
-                  
-                                                                      
+                                                      
                                    
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
