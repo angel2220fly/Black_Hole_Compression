@@ -18,7 +18,7 @@ class compression:
                         
                         
                                   
-                        if Square_of_ROOT<=(26*1024*1024):
+                        if Square_of_ROOT>=(26*1024*1024):
                                    Square_of_ROOT=(26*1024*1024)
                                                                       
                                    
