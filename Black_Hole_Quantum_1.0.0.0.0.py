@@ -197,6 +197,7 @@ class compression:
                                             
                                             if Times_12>2**21:
                                                 Times_12=0
+                                                Square_of_ROOT+=1
 
                                                 counts=0
                                                 X1+=1
@@ -420,6 +421,7 @@ class compression:
                                             
                                             if Times_12>2**21:
                                                 Times_12=0
+                                                Square_of_ROOT+=1    
 
                                                 counts=0
                                                 X1+=1
