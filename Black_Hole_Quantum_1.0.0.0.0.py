@@ -132,6 +132,9 @@ class compression:
                                     File_information5_2=INFO
                                     Extact=File_information5_2
                                     A=int(Extact,2)
+                                    if A%Key!=0:
+                                        print("Wrong key try again!")
+                                        raise SystemExit
                                     long_13=len(File_information5_2)
                                 long_12=len(File_information5_2)
                                 if i==1:
