@@ -7,7 +7,7 @@ long_1=0
 name=""
 add_bits=""
 Make_togher=""
-Key = input("What is a key? ")
+Key = int(input("What is a key? "))
 
 
 name_input = input("c,  compress or e, extract? ")
