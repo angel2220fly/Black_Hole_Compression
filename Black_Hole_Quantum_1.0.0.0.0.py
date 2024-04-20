@@ -7,7 +7,7 @@ long_1=0
 name=""
 add_bits=""
 Make_togher=""
-Key = int(input("Please, enter Key? "))
+
 
  
 
@@ -47,7 +47,7 @@ class compression:
                         i=2
                     Clear=""
                     name = input("What is name of file?")
-                    
+                    Key = int(input("Please, enter Key? "))
                     if os.path.exists(name):
                             print('Path is exists!')
                     else:
