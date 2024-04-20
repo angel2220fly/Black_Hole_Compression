@@ -7,8 +7,9 @@ long_1=0
 name=""
 add_bits=""
 Make_togher=""
-Key = int(input("What is a key? "))
+Key = int(input("Please, enter Key? "))
 
+ 
 
 name_input = input("c,  compress or e, extract? ")
 #@Author Jurijus Pacalovas
@@ -18,10 +19,10 @@ class compression:
                 def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts):
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
-                        
-                        
-                        Square_of_ROOT=Key
-                                                      
+                        if Square_of_ROOT<=(26*1024*1024):
+                                       Square_of_ROOT=Key
+                              ##
+                                  
                                    
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
