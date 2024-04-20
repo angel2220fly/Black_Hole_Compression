@@ -7,11 +7,8 @@ long_1=0
 name=""
 add_bits=""
 Make_togher=""
-level_c = input("level compress 1 or  2? ")
-if level_c=="1":
-    level_c1=1
-else:
-    level_c1=2
+Key = input("What is a key? ")
+
 
 name_input = input("c,  compress or e, extract? ")
 #@Author Jurijus Pacalovas
@@ -23,15 +20,7 @@ class compression:
                         Square_of_ROOT = Hole_Number_information
                         
                         
-                        if level_c1==2:   
-                            if Square_of_ROOT>=(26*1024*1024):
-                                       Square_of_ROOT=(26*1024*1024)
-                                                                          
-                         if level_c1==1:   
-                            if Square_of_ROOT<=(26*1024*1024):
-                                       Square_of_ROOT=(26*1024*1024)
-                  
-                                                                      
+                        Square_of_ROOT=Key                                                                      
                                    
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
