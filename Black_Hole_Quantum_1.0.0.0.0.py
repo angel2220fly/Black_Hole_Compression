@@ -131,10 +131,16 @@ class compression:
                                             z=z+1
                                     File_information5_2=INFO
                                     Extact=File_information5_2
+                                    
                                     A=int(Extact,2)
-                                    if A%Key!=0:
-                                        print("Wrong key try again!")
-                                        raise SystemExit
+                                    Key_got=A//int(Key)
+                                    Key1=int(Key_got)*int(Key)
+                                    Key2=A-int(Key1)
+                                    Key=int(Key2)+int(Key)
+                                    print("Key is:")
+                                  
+                                    print(Key)
+                                      
                                     long_13=len(File_information5_2)
                                 long_12=len(File_information5_2)
                                 if i==1:
