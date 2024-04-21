@@ -9,8 +9,6 @@ add_bits=""
 Make_togher=""
 
 
- 
-
 name_input = input("c,  compress or e, extract? ")
 #@Author Jurijus Pacalovas
 class compression:
@@ -19,8 +17,12 @@ class compression:
                 def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts):
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
-                        if Square_of_ROOT==Key:
+                        if level==1:
                             Square_of_ROOT=Key
+                           
+                        else:
+                           if Square_of_ROOT==Key:
+                               Square_of_ROOT=Key
 
                                    
                   
@@ -28,6 +30,7 @@ class compression:
                                    
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
+                        print(Number_of_the_file)
                         F=0
                         if counts==-1:
                                 counts+=1
@@ -53,6 +56,13 @@ class compression:
                     Clear=""
                     name = input("What is name of file?")
                     Key = float(input("Please, enter Key? "))
+                    level = input("Level of compression? ")
+                    if level=="1":
+                        level=1
+                        L=48
+                    else:
+                        level=2
+                        L=40
                     
                     if os.path.exists(name):
                             print('Path is exists!')
@@ -172,8 +182,8 @@ class compression:
                                             k2+=1
                                             University=int(k2)
                                             X2=X1
-                                            C11="0"+str(((8*X2)+40))+"b"
-                                            if k2>(2**((8*X1)+40)-1):
+                                            C11="0"+str(((8*X2)+L))+"b"
+                                            if k2>(2**((8*X1)+L)-1):
                                                     University=0
                                                     k1=-1
                                                     k2=0
@@ -187,6 +197,8 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            if level==1:
+                                                Key=int(University_file[(X2*8)+40:(X2*8)+48],2)
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
@@ -196,7 +208,7 @@ class compression:
                                             
                                             if Times_12>2**21:
                                                 Times_12=0
-                                                Square_of_ROOT+=1
+                                               
 
                                                 counts=0
                                                 X1+=1
@@ -385,8 +397,8 @@ class compression:
                                             k2+=1
                                             University=int(k2)
                                             X2=X1
-                                            C11="0"+str(((8*X2)+40))+"b"
-                                            if k2>(2**((8*X1)+40)-1):
+                                            C11="0"+str(((8*X2)+L))+"b"
+                                            if k2>(2**((8*X1)+L)-1):
                                                     University=0
                                                     k1=-1
                                                     k2=0
@@ -400,6 +412,8 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            if level==1:
+                                                Key=int(University_file[(X2*8)+40:(X2*8)+48],2)
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
@@ -409,7 +423,7 @@ class compression:
                                             
                                             if Times_12>2**21:
                                                 Times_12=0
-                                                Square_of_ROOT+=1
+                                             
 
                                                 counts=0
                                                 X1+=1
