@@ -23,7 +23,7 @@ class compression:
                             Square_of_ROOT=Key
                            
                         else:
-                           if Square_of_ROOT==Key:
+                           if Square_of_ROOT<=Key:
                                Square_of_ROOT=Key
 
                               
