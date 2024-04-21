@@ -30,7 +30,7 @@ class compression:
                                    
                         
                         Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
-                        print(Number_of_the_file)
+                        #print(Number_of_the_file)
                         F=0
                         if counts==-1:
                                 counts+=1
