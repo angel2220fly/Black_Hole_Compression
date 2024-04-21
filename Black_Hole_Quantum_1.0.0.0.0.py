@@ -19,7 +19,8 @@ class compression:
                 def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts):
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
-                        Square_of_ROOT=Key
+                        if Square_of_ROOT==Key:
+                            Square_of_ROOT=Key
                               
                                   
                                    
