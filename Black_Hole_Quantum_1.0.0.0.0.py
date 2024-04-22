@@ -59,8 +59,11 @@ class compression:
                     level = input("Level of compression 1-3? ")
                     
                     X1 = input("Level of compression of X1? ")
-                    if level=="1":
-                        level=1
+                    if level=="1" or level=="2" :
+                        if level=="1":
+                            level=1
+                        if level=="2":
+                            level=3
                         L=48
                     else:
                         level=2
