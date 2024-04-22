@@ -54,9 +54,10 @@ class compression:
                     if name_input=="e":
                         i=2
                     Clear=""
-                    name = input("What is name of file?")
+                    name = input("What is name of file? ")
                     Key = float(input("Please, enter Key? "))
-                    level = input("Level of compression? ")
+                    level = input("Level of compression 1 or 2? ")
+                    X1 = input("Level of compression of X1? ")
                     if level=="1":
                         level=1
                         L=48
