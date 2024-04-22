@@ -55,7 +55,7 @@ class compression:
                     level = 2
                     L=40
                     
-                    X1 = int(input("Level of compression of X1? "))
+                    
         
                     
                     if os.path.exists(name):
