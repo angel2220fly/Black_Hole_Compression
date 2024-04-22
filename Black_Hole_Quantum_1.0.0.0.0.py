@@ -212,7 +212,6 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
-Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             if level==3:
                                                 Key+=1
                                             if level==1:
@@ -442,12 +441,11 @@ Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUARE_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
-Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             if level==3:
                                                 Key+=1
                                             if level==1:
                                                 Key=int(University_file[(X2*8)+32:(X2*8)+40],2)
-                                            
+                                               
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
