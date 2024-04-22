@@ -17,11 +17,7 @@ class compression:
                 def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts):
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
-                        if level==1:
-                            Square_of_ROOT=Key
-                           
-                        else:
-                           if Square_of_ROOT<=Key:
+                        if Square_of_ROOT<=Key:
                                Square_of_ROOT=Key
 
                                    
@@ -55,21 +51,12 @@ class compression:
                         i=2
                     Clear=""
                     name = input("What is name of file? ")
-                    Key = int(input("Please, enter Key? "))
-                    level = input("Level of compression 1-4? ")
+                    Key = 1
+                    level = 2
+                    L=40
                     
                     X1 = int(input("Level of compression of X1? "))
-                    if level=="1" or level=="2" or level=="3":
-                        if level=="1":
-                            level=1
-                        if level=="2":
-                            level=3
-                        if level=="3":
-                            level=4
-                        L=48
-                    else:
-                        level=2
-                        L=40
+        
                     
                     if os.path.exists(name):
                             print('Path is exists!')
@@ -154,15 +141,8 @@ class compression:
                                             z=z+1
                                     File_information5_2=INFO
                                     Extact=File_information5_2
-                                    
-                                    A=int(Extact,2)
-                                    Key_got=A//int(Key)
-                                    Key1=int(Key_got)*int(Key)
-                                    Key2=A-int(Key1)
-                                    Key=int(Key2)+int(Key)
-                                    print("Key is:")
-                                  
-                                    print(Key)
+                                    A=int(Extact,2)                                    
+                                
                                         
                                     long_13=len(File_information5_2)
                                 long_12=len(File_information5_2)
@@ -204,17 +184,7 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
-                                            if level==3 or level==4:
-                                                Key+=1
-                                                if level==4:
-                                                    A=int(Extact,2)
-                                                    Key_got=A//int(Key)
-                                                    Key1=int(Key_got)*int(Key)
-                                                    Key2=A-int(Key1)
-                                                    Key=int(Key2)+int(Key)
-                                               
-                                            if level==1:
-                                                Key=int(University_file[(X2*8)+40:(X2*8)+48],2)
+                              
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
@@ -428,16 +398,7 @@ class compression:
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
-                                            if level==3 or level==4:
-                                                Key+=1
-                                                if level==4:
-                                                    A=int(Extact,2)
-                                                    Key_got=A//int(Key)
-                                                    Key1=int(Key_got)*int(Key)
-                                                    Key2=A-int(Key1)
-                                                    Key=int(Key2)+int(Key)
-                                            if level==1:
-                                                Key=int(University_file[(X2*8)+40:(X2*8)+40],2)
+
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
