@@ -382,7 +382,7 @@ class compression:
                                                     
 
                                                                                 
-                                                    Random_C=int(File_information5[0:8],2)
+                                                Random_C=int(File_information5[0:8],2)
                                                 File_information5=File_information5[8:]
                                                 Random_C1=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
