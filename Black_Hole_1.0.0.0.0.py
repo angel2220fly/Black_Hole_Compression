@@ -188,7 +188,7 @@ class compression:
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
-                                                    X1 += y
+                                                    X1 += 1
                                                     counts = 0 # Reset counts to 0
                                             
                                             
@@ -402,7 +402,7 @@ class compression:
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
-                                                    X1 += y
+                                                    X1 += 1
                                                     counts = 0 # Reset counts to 0
                                             
                                             
