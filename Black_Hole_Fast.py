@@ -191,7 +191,7 @@ class compression:
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
-                                                    X1 += y
+                                                    X1 += 1
                                                     counts = 0 # Reset counts to 0
                                             
                                             
@@ -367,7 +367,8 @@ class compression:
                                                 File_information5=File_information5[Random_C:]
                                                 MN=int(File_information5[:Random_C1],2)
                                                
-                                                File_information5=File_information5[Random_C1:]
+                                                File_information5=File_information5[Random_C1:]
+
                                                 Random_C=int(File_information5[0:8],2)
                                                 File_information5=File_information5[8:]
                                                 Random_C1=int(File_information5[:Random_C],2)
@@ -422,7 +423,7 @@ class compression:
                                             # Increment X1 by 'i' and reset counts to 0 if Times_12 is greater than 2**i
                                             
                                             if Times_12 > 2**y:
-                                                    X1 += y
+                                                    X1 += 1
                                                     counts = 0 # Reset counts to 0
                                             
                                             
