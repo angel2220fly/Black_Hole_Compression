@@ -176,16 +176,17 @@ class compression:
                                             X2=X1
                                             #print(X1)
                                             C11="0"+str(((8*X2)+L))+"b"
-                                            if k3>(2**24):
+                                         
+                                            if X1>(2**255):
                                                 
-                                                    counts=-1
+                                                    counts=0
                                                 
                                                     
                                                     k3+=1
                                                     
-                                            if X1%(2**48)==0:
+                                            if k3%(2**255)==0:
                                                 
-                                                    counts=-1
+                                                    counts=0
                                                     X1+=1
                                                     
                                                     k3=0                                                                                           
@@ -437,18 +438,19 @@ class compression:
                                             X2=X1
                                             #print(X1)
                                             C11="0"+str(((8*X2)+L))+"b"
-                                            if k3>(2**24):
+                                            if X1>(2**255):
                                                 
-                                                    counts=-1
+                                                    counts=0
                                                 
                                                     
                                                     k3+=1
-                                            if X1%(2**48)==0:
+                                                    
+                                            if k3%(2**255)==0:
                                                 
-                                                    counts=-1
+                                                    counts=0
                                                     X1+=1
                                                     
-                                                    k3=0                         
+                                                    k3=0                             
                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
