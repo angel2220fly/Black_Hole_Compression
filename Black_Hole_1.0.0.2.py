@@ -184,7 +184,7 @@ class compression:
                                                     
                                                     k3+=1
                                                     
-                                            if k3%(2**65025)==0:
+                                            if k3%(2**255)==0:
                                                 
                                                     counts=0
                                                     X1+=1
@@ -445,7 +445,7 @@ class compression:
                                                     
                                                     k3+=1
                                                     
-                                            if k3%(2**65025)==0:
+                                            if k3%(2**255)==0:
                                                 
                                                     counts=0
                                                     X1+=1
