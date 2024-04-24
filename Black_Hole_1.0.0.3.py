@@ -442,6 +442,7 @@ class compression:
                                     k1=-2
                                     k2=-1
                                     k3=-1
+                                    k4=-1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
