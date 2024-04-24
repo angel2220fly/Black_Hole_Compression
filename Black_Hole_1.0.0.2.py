@@ -157,7 +157,7 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=0
+                                    k3=1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -189,7 +189,9 @@ class compression:
                                                     counts=0
                                                     X1+=1
                                                     
-                                                    k3=0                                                                                           
+                                                    k3=1
+
+                                            
                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
@@ -419,7 +421,7 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=0
+                                    k3=1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -450,7 +452,7 @@ class compression:
                                                     counts=0
                                                     X1+=1
                                                     
-                                                    k3=0                             
+                                                    k3=1                             
                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
