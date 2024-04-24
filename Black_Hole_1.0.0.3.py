@@ -160,6 +160,7 @@ class compression:
                                     k3=1
                                     X1=1
                                     k4=1
+                                    k5=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -199,9 +200,15 @@ class compression:
                                                     counts=0
                                                    
                                                     
-                                                    X1+=1
+                                                    k5+=1
                                                     k4=1                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                               
+                                            if k5%(2**(255*8))==0:
+                                                
+                                                    counts=0
+                                                   
+                                                    
+                                                    X1+=1
+                                                    k5=1                                                                                                                                                                                                                                                                                                                                                                                                                 
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
@@ -342,13 +349,19 @@ class compression:
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'08b')
-                                                       MN4=Time_Real4+Time_Real1+Time_Real3                                                         
-                                                       Long_PM=File_information5_17="1"+MN4+MN3+MN+XN+Counts+long_file
+                                                       MN4=Time_Real4+Time_Real1+Time_Real3 
+                                                       Time_Real3=bin(k5)[2:]
+                                                       T1=len(Time_Real3)
+                                                       Time_Real1=bin(T1)[2:]
+                                                       T2=len(Time_Real1)
+                                                       Time_Real4=format(T2,'08b')
+                                                       MN5=Time_Real4+Time_Real1+Time_Real3
+                                                       Long_PM=File_information5_17="1"+MN5+MN4+MN3+MN+XN+Counts+long_file
                                                        Long_PM1=len(Long_PM)
                                                        #print(Long_PM1)
                                                        
                                                        if int(INFO,2)<=Number_of_the_file and Long_PM1+X3<len(data)*8 and File_information6_Times2_1==Times_12 or int(INFO,2)==Number_of_the_file  and File_information6_Times2_1==Times_12:
-                                                               File_information5_17="1"+MN4+MN3+MN+XN+Counts+long_file
+                                                               File_information5_17="1"+MN5+MN4+MN3+MN+XN+Counts+long_file
                                                                long_1=len(File_information5_17)
                                                                add_bits=""
                                                                count_bits=8-long_1%8
@@ -403,6 +416,14 @@ class compression:
                                                 File_information5=File_information5[8:]
                                                 Random_C1=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
+                                                k8=int(File_information5[:Random_C1],2)
+                                                
+                                                File_information5=File_information5[Random_C1:]                                                                                
+                                                
+                                                Random_C=int(File_information5[0:8],2)
+                                                File_information5=File_information5[8:]
+                                                Random_C1=int(File_information5[:Random_C],2)
+                                                File_information5=File_information5[Random_C:]
                                                 k7=int(File_information5[:Random_C1],2)
                                                 
                                                 File_information5=File_information5[Random_C1:]                                                                                
@@ -445,6 +466,7 @@ class compression:
                                     k2=-1
                                     k3=1
                                     k4=1
+                                    k5=1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -483,9 +505,15 @@ class compression:
                                                     counts=0
                                                    
                                                     
+                                                    k5+=1
+                                                    k4=1                                                                                                                                                                                                                                                 
+                                            if k5%(2**(255*8))==0:
+                                                
+                                                    counts=0
+                                                   
+                                                    
                                                     X1+=1
-                                                    k4=1                                
-                                           
+                                                    k5=1                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
