@@ -157,9 +157,9 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=0
+                                    k3=1
                                     X1=1
-                                    k4=0
+                                    k4=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -175,7 +175,8 @@ class compression:
                                             k3+=1
                                             University=int(k2)
                                             X2=X1
-                                            #print(X1)
+                                           
+                                           
                                             C11="0"+str(((8*X2)+L))+"b"
                                          
                                             if X1>(2**(255*8)):
@@ -190,7 +191,7 @@ class compression:
                                                     counts=0
                                                  
                                                     
-                                                    k3=0
+                                                    k3=1
                                                     k4+=1
                                                     
                                             if k4%(2**(255*8))==0:
@@ -199,7 +200,7 @@ class compression:
                                                    
                                                     
                                                     X1+=1
-                                                    k4=0                                                                                                                                                                                                                                                  
+                                                    k4=1                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                                                                
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
@@ -403,6 +404,7 @@ class compression:
                                                 Random_C1=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
                                                 k7=int(File_information5[:Random_C1],2)
+                                                
                                                 File_information5=File_information5[Random_C1:]                                                                                
                                                 Random_C=int(File_information5[0:8],2)
                                                 File_information5=File_information5[8:]
@@ -441,8 +443,8 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=0
-                                    k4=0
+                                    k3=1
+                                    k4=1
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -473,7 +475,7 @@ class compression:
                                                     counts=0
                                                  
                                                     
-                                                    k3=0
+                                                    k3=1
                                                     k4+=1
                                                     
                                             if k4%(2**(255*8))==0:
@@ -482,7 +484,7 @@ class compression:
                                                    
                                                     
                                                     X1+=1
-                                                    k4=0                                 
+                                                    k4=1                                
                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
