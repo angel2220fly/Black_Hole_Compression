@@ -190,7 +190,7 @@ class compression:
                                                     counts=0
                                                  
                                                     
-                                                    k4=0
+                                                    k3=0
                                                     k4+=1
                                                     
                                             if k4%(2**(255*8))==0:
@@ -473,7 +473,7 @@ class compression:
                                                     counts=0
                                                  
                                                     
-                                                    k4=0
+                                                    k3=0
                                                     k4+=1
                                                     
                                             if k4%(2**(255*8))==0:
