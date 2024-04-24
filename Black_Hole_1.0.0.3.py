@@ -225,7 +225,7 @@ class compression:
                                                
 
                                                 counts=0
-                                                X1+=1
+                                                
                                                 y=0        
 
 
@@ -525,7 +525,7 @@ class compression:
                                                
 
                                                 counts=0
-                                                X1+=1
+                
                                                 y=0        
 
 
