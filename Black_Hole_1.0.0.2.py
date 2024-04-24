@@ -157,7 +157,7 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=-1
+                                    k3=0
                                     X1=1
                                     Extract1=0
                                     Multiply=1
@@ -419,7 +419,7 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=-1
+                                    k3=0
                                     X1=1
                                     Extract1=0
                                     Multiply=1
