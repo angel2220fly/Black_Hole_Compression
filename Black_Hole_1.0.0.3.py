@@ -618,7 +618,7 @@ class compression:
                                                         if int(INFO,2)==Number_of_the_file:  
                                                                if C==1:
                                                                        C=1
-                                                if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR and k6==k3 and k7==k4:
+                                                if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR and k6==k3 and k7==k4 and k8==k5:
                                                        long_1=len(File_information5_17)
                                                        if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR:
                                                                CN="0"+str(long)+"b"
