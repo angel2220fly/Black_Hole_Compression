@@ -14,7 +14,7 @@ name_input = input("c,  compress or e, extract? ")
 class compression:
         def cryptograpy_compression4(self):
                           
-                def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts,k2):
+                def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts):
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
                         if Square_of_ROOT<=Key:
@@ -25,7 +25,7 @@ class compression:
                                                                       
                                    
                         
-                        Number_of_the_file =k2
+                        Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
                         #print(Number_of_the_file)
                         F=0
                         if counts==-1:
@@ -217,6 +217,7 @@ class compression:
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                               
+
                                             
                                             
                                             if Times_12>2**21:
@@ -289,7 +290,7 @@ class compression:
                                                                 Hole_Number_information=(2**Deep5)-1
                                                                 
                                                         Square_of_ROOT=Hole_Number_information
-                                                        Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts = process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts,k2)
+                                                        Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts = process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts)
 
                                                         Times_half_Real+=1
                                             File_information5_17=bin(Number_of_the_file)[2:]
@@ -517,8 +518,7 @@ class compression:
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                               
-
-                                            
+                   
                                             
                                             if Times_12>2**21:
                                                 Times_12=0
@@ -591,7 +591,7 @@ class compression:
                                                         else:
                                                                 Deep5=26*1024*1024
                                                                 Hole_Number_information=(2**Deep5)-1 
-                                                        Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts = process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts,k2)
+                                                        Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts = process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts)
 
                                                         Times_half_Real+=1
                                             File_information5_17=bin(Number_of_the_file)[2:]
