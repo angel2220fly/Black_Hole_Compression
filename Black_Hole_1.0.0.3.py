@@ -181,7 +181,7 @@ class compression:
                                            
                                             C11="0"+str(((8*X2)+L))+"b"
                                          
-                                            if X1>(2**(255*8)):
+                                            if X4>(2**(255*8)):
                                                 
                                                     counts=0
                                                 
@@ -477,7 +477,7 @@ class compression:
                                             X2=X1
                                             #print(X1)
                                             C11="0"+str(((8*X2)+L))+"b"
-                                            if X1>(2**(255*8)):
+                                            if X4>(2**(255*8)):
                                                 
                                                     counts=0
                                                 
