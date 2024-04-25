@@ -161,6 +161,7 @@ class compression:
                                     X1=1
                                     k4=1
                                     k5=1
+                                    X4=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -207,7 +208,7 @@ class compression:
                                                     counts=0
                                                    
                                                     
-                                                    X1+=1
+                                                    X4+=1
                                                     k5=1                                                                                                                                                                                                                                                                                                                                                                                                                 
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
@@ -308,7 +309,7 @@ class compression:
                                                        T1=len(Time_Real3)
                                                        Time_Real4=format(T1,'08b')
                                                        long_file=Time_Real4+Time_Real3
-                                                       Time_Real3=bin(X1)[2:]
+                                                       Time_Real3=bin(X4)[2:]
                                                        T1=len(Time_Real3)
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
@@ -458,6 +459,7 @@ class compression:
                                     k4=1
                                     k5=1
                                     X1=1
+                                    X4=1
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -502,11 +504,11 @@ class compression:
                                                     counts=0
                                                    
                                                     
-                                                    X1+=1
+                                                    X4+=1
                                                     k5=1                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
-                                            Times_12=,1
+                                            Times_12=1
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
