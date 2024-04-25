@@ -356,7 +356,7 @@ class compression:
                                                        Long_PM1=len(Long_PM)
                                                        #print(Long_PM1)
                                                        
-                                                       if int(INFO,2)<=Number_of_the_file and Long_PM1+X3<len(data)*8 and File_information6_Times2_1==Times_12 or int(INFO,2)==Number_of_the_file  and File_information6_Times2_1==Times_12:
+                                                       if int(INFO,2)<=Number_of_the_file and Long_PM1+Long_PM1<len(data)*8 and File_information6_Times2_1==Times_12 or int(INFO,2)==Number_of_the_file  and File_information6_Times2_1==Times_12:
                                                                File_information5_17="1"+MN5+MN4+MN3+MN+XN+Counts+long_file
                                                                long_1=len(File_information5_17)
                                                                add_bits=""
