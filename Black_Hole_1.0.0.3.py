@@ -211,7 +211,7 @@ class compression:
                                                     k5=1                                                                                                                                                                                                                                                                                                                                                                                                                 
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
+                                            Times_12=1
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
@@ -220,13 +220,7 @@ class compression:
 
                                             
                                             
-                                            if Times_12>2**21:
-                                                Times_12=0
-                                               
-
-                                                counts=0
-                                                
-                                                y=0        
+                                             
 
 
 
@@ -512,7 +506,7 @@ class compression:
                                                     k5=1                                            
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
+                                            Times_12=,1
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
@@ -520,13 +514,7 @@ class compression:
                               
                    
                                             
-                                            if Times_12>2**21:
-                                                Times_12=0
-                                               
-
-                                                counts=0
-                
-                                                y=0        
+                                                 
 
 
 
