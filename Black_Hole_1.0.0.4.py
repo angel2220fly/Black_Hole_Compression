@@ -13,7 +13,110 @@ name_input = input("c,  compress or e, extract? ")
 #@Author Jurijus Pacalovas
 class compression:
         def cryptograpy_compression4(self):
-                          
+                def Algorithm_Jurijus_Pacalovas():
+                       
+                       z=1
+                    
+                                      
+                       if z==1:                      
+                                      
+                                            k1+=1
+                                            k2+=1
+                                            k3+=1
+                                            University=int(k2)
+                                            X2=X1
+                                           
+                                           
+                                            C11="0"+str(((8*X2)+L))+"b"
+                                            if counts%2**48==0:
+                                                X1+=1
+                                            if X1>(2**(255*8)):
+                                                
+                                          
+                                                
+                                                    
+                                                    k3+=1
+                                                    
+                                            if k3%(2**(255*8))==0:
+                                                
+                                                 
+                                                 
+                                                    counts=0
+                                                    k3=1
+                                                    k4+=1
+                                                    
+                                            if k4%(2**(255*8))==0:
+                                                
+                                                   
+                                                   
+                                                    
+                                                    k5+=1
+                                                    k4=1                                                                                                                                                                                                                                                 
+                                            if k5%(2**(255*8))==0:
+                                                
+                                                 
+                                                   
+                                                    
+                                                    X4+=1
+                                                    k5=1
+                                            z=1             
+                                            if z==1:
+                                                
+                                     
+                                                            
+                                                            File_information52=format(SQUEAR_OF_ROOT,'024b')
+                                                            File_information53=format(Multiply,'024b')                         
+                                                                
+                                                                                                           
+                                                            
+                                                            Add_N=format(Add_Numbers,'024b')
+                                                            if   File_information6_Times2==0:
+                                                                File_information54=format(Multiply_Times,'040b')
+                                                                File_information5_2=File_information54
+                                                            File_information54=File_information5_2
+                                                            File_information53=format(Multiply,'024b')                                            
+                                                            File_information5_2=File_information54
+                                                            File_information5_17=""
+                                                            long_16=len(File_information54)
+                                                            add_bits=""
+                                                            Clear=""
+                                                            INFO10=""
+                                                            Translate_info_Decimal=""
+                                                            Clear=""
+                                                            Number_of_the_file=0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                            University_file=format(University,C11)
+                                         
+                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
+                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
+                                            Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
+                                            Multiply_Times=int(University_file[(X2*8)+24:(X2*8)+32],2)
+                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                              
+
+                                            
+                                            
+                                            if Times_12>2**21:
+                                                Times_12=0
+                                               
+
+                                                  
+
+
+
+
+                                                                                    
+
+                                            if Divide==0:
+                                            	Divide=1
+                                            if Times_12==0:
+                                                Times_12=1 
+                                            if Multiply==0:
+                                                Multiply=1 
+                                            File_information52=""
+                                            File_information53=""
+                                            File_information54=""
+                                            Add_N=""      
                 def process_files(Number_of_the_file, Hole_Number_information, Add_Numbers, Multiply, counts):
                         Before_X = Number_of_the_file
                         Square_of_ROOT = Hole_Number_information
@@ -77,6 +180,26 @@ class compression:
                     C3=0
                     C4=0
                     C5=0
+                    z=1
+                    if z==1:
+                                    y=0            
+                                            
+                                    k1=-2
+                                    k2=0
+                                    k3=0
+                                    X1=0
+                                    k4=0
+                                    k5=0
+                                    X4=0
+                                    Extract1=0
+                                    Multiply=1
+                                    Add_Numbers=-1
+                                    Times_12=1
+                                    University=-1
+                                    Divide=1  
+                                    counts=-1
+                                    SQUEAR_OF_ROOT=-1
+                                    Multiply_Times=0
                     n=0
                     x = time()
                     File_information6_Times2_1=0
@@ -154,112 +277,9 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
-                                    y=0            
-                                    k1=-2
-                                    k2=0
-                                    k3=0
-                                    X1=0
-                                    k4=0
-                                    k5=0
-                                    X4=0
-                                    Extract1=0
-                                    Multiply=1
-                                    Add_Numbers=-1
-                                    Times_12=1
-                                    University=-1
-                                    Divide=1  
-                                    counts=-1
-                                    SQUEAR_OF_ROOT=-1
-                                    Multiply_Times=0
-                                    while Extract1!=1:
-                                            k1+=1
-                                            k2+=1
-                                            k3+=1
-                                            University=int(k2)
-                                            X2=X1
-                                           
-                                           
-                                            C11="0"+str(((8*X2)+L))+"b"
-                                            if counts%2**48==0:
-                                                X1+=1
-                                            if X1>(2**(255*8)):
-                                                
-                                          
-                                                
-                                                    
-                                                    k3+=1
-                                                    
-                                            if k3%(2**(255*8))==0:
-                                                
-                                                 
-                                                 
-                                                    counts=0
-                                                    k3=1
-                                                    k4+=1
-                                                    
-                                            if k4%(2**(255*8))==0:
-                                                
-                                                   
-                                                   
-                                                    
-                                                    k5+=1
-                                                    k4=1                                                                                                                                                                                                                                                 
-                                            if k5%(2**(255*8))==0:
-                                                
-                                                 
-                                                   
-                                                    
-                                                    X4+=1
-                                                    k5=1                                                                                                                                                                                                                                                                                                                                                                                                                   
-                                            University_file=format(University,C11)
-                                         
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            Multiply_Times=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+32:(X2*8)+40],2)
-                              
-
-                                            
-                                            
-                                            if Times_12>2**21:
-                                                Times_12=0
-                                               
-
-                                                  
-
-
-
-
-                                                                                    
-
-                                            if Divide==0:
-                                            	Divide=1
-                                            if Times_12==0:
-                                                Times_12=1 
-                                            if Multiply==0:
-                                                Multiply=1 
-                                            File_information52=""
-                                            File_information53=""
-                                            File_information54=""
-                                            Add_N=""
-                                            File_information52=format(SQUEAR_OF_ROOT,'024b')
-                                            File_information53=format(Multiply,'024b')
-                                            Add_N=format(Add_Numbers,'024b')
-                                            if   File_information6_Times2==0:
-                                                File_information54=format(Multiply_Times,'040b')
-                                                File_information5_2=File_information54
-                                            File_information54=File_information5_2
-                                            File_information53=format(Multiply,'024b')                                            
-                                            File_information5_2=File_information54
-                                            File_information5_17=""
-                                            long_16=len(File_information54)
-                                            add_bits=""
-                                            Clear=""
-                                            INFO10=""
-                                            Translate_info_Decimal=""
-                                            Clear=""
-                                            Number_of_the_file=0
+                                        z=1
+                                        while Extract1!=1:
+                                            Algorithm_Jurijus_Pacalovas()
                                             C=1
                                             if C==1:
                                                 if   File_information6_Times2==0:
@@ -356,7 +376,7 @@ class compression:
                                                        Long_PM1=len(Long_PM)
                                                        #print(Long_PM1)
                                                        
-                                                       if int(INFO,2)<=Number_of_the_file and Long_PM1+Long_PM1<len(data)*8 and File_information6_Times2_1==Times_12 or int(INFO,2)==Number_of_the_file  and File_information6_Times2_1==Times_12:
+                                                       if int(INFO,2)<=Number_of_the_file and Long_PM1+X3<len(data)*8 and File_information6_Times2_1==Times_12 or int(INFO,2)==Number_of_the_file  and File_information6_Times2_1==Times_12:
                                                                File_information5_17="1"+MN5+MN4+MN3+MN+XN+Counts+long_file
                                                                long_1=len(File_information5_17)
                                                                add_bits=""
@@ -368,6 +388,11 @@ class compression:
                                                                                z=z+1
                                                                File_information5_17=add_bits+File_information5_17
                                                                Extract1=1
+                                                               
+                                                                                              
+                                z=1             
+                                if z==1:                                                               
+                                                               
                                     if Extract1==1:                
                                             L=len(File_information5_17)
                                             n = int(File_information5_17, 2)
@@ -457,111 +482,10 @@ class compression:
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
                                     
-                                    y=0            
-                                            
-                                    k1=-2
-                                    k2=0
-                                    k3=0
-                                    X1=0
-                                    k4=0
-                                    k5=0
-                                    X4=0
-                                    Extract1=0
-                                    Multiply=1
-                                    Add_Numbers=-1
-                                    Times_12=1
-                                    University=-1
-                                    Divide=1  
-                                    counts=-1
-                                    SQUEAR_OF_ROOT=-1
-                                    Multiply_Times=0
-                                    while Extract1!=1:
-                                            k1+=1
-                                            k2+=1
-                                            k3+=1
-                                            University=int(k2)
-                                            X2=X1
-                                            #print(X1)
-                                            C11="0"+str(((8*X2)+L))+"b"
-                                            if counts%2**48==0:
-                                                X1+=1
-                                            if X1>(2**(255*8)):
-                                                
-                                          
-                                                
-                                                    
-                                                    k3+=1
-                                                    
-                                            if k3%(2**(255*8))==0:
-                                                
-                                                 
-                                                 
-                                                    counts=0
-                                                    k3=1
-                                                    k4+=1
-                                                    
-                                            if k4%(2**(255*8))==0:
-                                                
-                                                   
-                                                   
-                                                    
-                                                    k5+=1
-                                                    k4=1                                                                                                                                                                                                                                                 
-                                            if k5%(2**(255*8))==0:
-                                                
-                                                 
-                                                   
-                                                    
-                                                    X4+=1
-                                                    k5=1                                            
-                                            University_file=format(University,C11)
-                                            
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            Multiply_Times=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+32:(X2*8)+40],2)
-                              
-                   
-                                            
-                                            if Times_12>2**21:
-                                                Times_12=0
-                                               
 
-                                                  
-
-
-
-
-                                                                                    
-
-                                            if Divide==0:
-                                            	Divide=1
-                                            if Times_12==0:
-                                                Times_12=1 
-                                            if Multiply==0:
-                                                Multiply=1 
-                                            File_information52=""
-                                            File_information53=""
-                                            File_information54=""
-                                            Add_N=""
-                                            File_information52=format(SQUEAR_OF_ROOT,'024b')
-                                            File_information53=format(Multiply,'024b')
-                                            Add_N=format(Add_Numbers,'024b')
-                                            if   File_information6_Times2==0:
-                                                File_information54=format(Multiply_Times,'040b')
-                                                File_information5_2=File_information54
-                                            File_information54=File_information5_2
-                                            File_information53=format(Multiply,'024b')                                            
-                                            File_information5_2=File_information54
-                                            File_information5_17=""
-                                            long_16=len(File_information54)
-                                            add_bits=""
-                                            Clear=""
-                                            INFO10=""
-                                            Translate_info_Decimal=""
-                                            Clear=""
-                                            Number_of_the_file=0
+                                        z=1
+                                        while Extract1!=1:
+                                            Algorithm_Jurijus_Pacalovas()
                                             C=1
                                             if C==1:
                                                 if   File_information6_Times2==0:
