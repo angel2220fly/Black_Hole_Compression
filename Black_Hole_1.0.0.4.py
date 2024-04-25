@@ -157,7 +157,7 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=0
+                                    k3=-1
                                     X1=0
                                     k4=0
                                     k5=0
@@ -461,7 +461,7 @@ class compression:
                                             
                                     k1=-2
                                     k2=-1
-                                    k3=0
+                                    k3=-1
                                     X1=0
                                     k4=0
                                     k5=0
