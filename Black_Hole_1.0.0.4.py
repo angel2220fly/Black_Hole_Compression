@@ -161,6 +161,7 @@ class compression:
                                     X1=0
                                     k4=0
                                     k5=0
+                                    X4=0
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -208,7 +209,7 @@ class compression:
                                                  
                                                    
                                                     
-                                                    X1+=1
+                                                    X4+=1
                                                     k5=1                                                                                                                                                                                                                                                                                                                                                                                                                   
                                             University_file=format(University,C11)
                                          
@@ -313,7 +314,7 @@ class compression:
                                                        T1=len(Time_Real3)
                                                        Time_Real4=format(T1,'08b')
                                                        long_file=Time_Real4+Time_Real3
-                                                       Time_Real3=bin(X1)[2:]
+                                                       Time_Real3=bin(X4)[2:]
                                                        T1=len(Time_Real3)
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
@@ -464,6 +465,7 @@ class compression:
                                     X1=0
                                     k4=0
                                     k5=0
+                                    X4=0
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -510,7 +512,7 @@ class compression:
                                                  
                                                    
                                                     
-                                                    X1+=1
+                                                    X4+=1
                                                     k5=1                                            
                                             University_file=format(University,C11)
                                             
@@ -609,9 +611,9 @@ class compression:
                                                         if int(INFO,2)==Number_of_the_file:  
                                                                if C==1:
                                                                        C=1
-                                                if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR and k6==k3 and k7==k4 and k8==k5:
+                                                if Extract_info==counts and File_information6_Times2_1==Times_12 and X4==XR and k6==k3 and k7==k4 and k8==k5:
                                                        long_1=len(File_information5_17)
-                                                       if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR:
+                                                       if Extract_info==counts and File_information6_Times2_1==Times_12 and X4==XR:
                                                                CN="0"+str(long)+"b"
                                                                File_information5_17=format(Number_of_the_file-MN,CN)
                                                                Extract1=1
