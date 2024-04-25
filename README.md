@@ -9,5 +9,5 @@ Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3
 Memory need of RAM (32 bits / 8 bits per byte = 4 bytes). 2^26 Bytes ≈ 64 MB
 Qubits need 805306370
 
-Maximum k2=2**(2**(2**(255*8)))
+Maximum k2=( 2^{(2^{(2^{(255 \times 8)})})} + 1)+
 
