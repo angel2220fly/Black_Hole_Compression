@@ -157,10 +157,10 @@ class compression:
                                     y=0            
                                     k1=-2
                                     k2=-1
-                                    k3=1
-                                    X1=1
-                                    k4=1
-                                    k5=1
+                                    k3=0
+                                    X1=0
+                                    k4=0
+                                    k5=0
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -183,35 +183,35 @@ class compression:
                                                 X1+=1
                                             if X1>(2**(255*8)):
                                                 
-                                                    counts=0
+                                          
                                                 
                                                     
                                                     k3+=1
                                                     
                                             if k3%(2**(255*8))==0:
                                                 
-                                                    counts=0
                                                  
-                                                    
+                                                 
+                                                    counts=0
                                                     k3=1
                                                     k4+=1
                                                     
                                             if k4%(2**(255*8))==0:
                                                 
-                                                    counts=0
+                                                   
                                                    
                                                     
                                                     k5+=1
                                                     k4=1                                                                                                                                                                                                                                                 
                                             if k5%(2**(255*8))==0:
                                                 
-                                                    counts=0
+                                                 
                                                    
                                                     
                                                     X1+=1
-                                                    k5=1                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                                    k5=1                                                                                                                                                                                                                                                                                                                                                                                                                   
                                             University_file=format(University,C11)
-                                            Divide=int(University_file[0:(X2*8)],2)
+                                         
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
@@ -225,10 +225,7 @@ class compression:
                                                 Times_12=0
                                                
 
-                                                counts=0
-                                                X1+=1
-                                                
-                                                y=0        
+                                                  
 
 
 
@@ -460,12 +457,13 @@ class compression:
                                                 File_information5=File_information5[Random_C:]
                                     
                                     y=0            
+                                            
                                     k1=-2
                                     k2=-1
-                                    k3=1
-                                    k4=1
-                                    k5=1
-                                    X1=1
+                                    k3=0
+                                    X1=0
+                                    k4=0
+                                    k5=0
                                     Extract1=0
                                     Multiply=1
                                     Add_Numbers=-1
@@ -487,35 +485,35 @@ class compression:
                                                 X1+=1
                                             if X1>(2**(255*8)):
                                                 
-                                                    counts=0
+                                          
                                                 
                                                     
                                                     k3+=1
                                                     
                                             if k3%(2**(255*8))==0:
                                                 
-                                                    counts=0
                                                  
-                                                    
+                                                 
+                                                    counts=0
                                                     k3=1
                                                     k4+=1
                                                     
                                             if k4%(2**(255*8))==0:
                                                 
-                                                    counts=0
+                                                   
                                                    
                                                     
                                                     k5+=1
                                                     k4=1                                                                                                                                                                                                                                                 
                                             if k5%(2**(255*8))==0:
                                                 
-                                                    counts=0
+                                                 
                                                    
                                                     
                                                     X1+=1
                                                     k5=1                                            
                                             University_file=format(University,C11)
-                                            Divide=int(University_file[0:(X2*8)],2)
+                                            
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
@@ -528,10 +526,7 @@ class compression:
                                                 Times_12=0
                                                
 
-                                                counts=0
-                                                X1+=1
-                
-                                                y=0        
+                                                  
 
 
 
