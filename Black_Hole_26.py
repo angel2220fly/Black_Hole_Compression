@@ -10,7 +10,7 @@ Make_togher=""
 
 
  
-
+print("Quantum Computer")
 name_input = input("c,  compress or e, extract? ")
 #@Author Jurijus Pacalovas
 class compression:

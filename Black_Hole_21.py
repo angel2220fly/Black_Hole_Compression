@@ -8,8 +8,9 @@ name=""
 add_bits=""
 Make_togher=""
 
-
+print("Quantum Computer")
 name_input = input("c,  compress or e, extract? ")
+
 #@Author Jurijus Pacalovas
 class compression:
         def cryptograpy_compression4(self):
