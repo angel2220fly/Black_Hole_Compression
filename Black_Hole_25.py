@@ -8,7 +8,7 @@ name=""
 add_bits=""
 Make_togher=""
 
-print("Quatum computer")
+print("Quatum computer 1 Billion Qubits or more ")
 name_input = input("c,  compress or e, extract? ")
 
 #@Author Jurijus Pacalovas

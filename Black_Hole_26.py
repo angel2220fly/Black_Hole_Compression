@@ -10,7 +10,7 @@ Make_togher=""
 
 
  
-print("Quantum Computer")
+print("Quantum Computer 1 Billion Qubits or more ")
 name_input = input("c,  compress or e, extract? ")
 #@Author Jurijus Pacalovas
 class compression:
